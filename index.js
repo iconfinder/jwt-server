@@ -1,6 +1,9 @@
 var express = require('express');
 var request = require('request');
+var cors = require('cors');
 var app = express();
+
+app.use(cors());
 
 var PORT = process.env.PORT;
 var CLIENT_ID = process.env.CLIENT_ID;
