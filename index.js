@@ -1,14 +1,13 @@
 var express = require('express');
-var app = express();
 var request = require('request');
+var app = express();
 
 var PORT = process.env.PORT;
 var CLIENT_ID = process.env.CLIENT_ID;
 var CLIENT_SECRET = process.env.CLIENT_SECRET;
 var AUTH_URL = "https://www.iconfinder.com/api/v3/oauth2/token";
 
-app.use(express.static('../public'));
-
+// Set the route
 app.get('/', function(req, res) {
     request.post(AUTH_URL, {
         form: {
@@ -26,6 +25,7 @@ app.get('/', function(req, res) {
     });
 });
 
+// Bind the app to the PORT
 app.listen(PORT, function() {
     console.log('Example app listening on port', PORT);
 });
