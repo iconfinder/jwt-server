@@ -26,6 +26,6 @@ app.get('/', function (req, res) {
     });
 });
 
-app.listen(3334, function () {
+app.listen(process.env.PORT, function () {
     console.log('Example app listening on port 3334!');
 });
