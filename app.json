@@ -1,0 +1,7 @@
+{
+    "name": "Iconfinder API JWT server",
+    "description": "JWT server for the Iconfinder API",
+    "repository": "https://github.com/iconfinder/jwt-server",
+    "logo": "https://node-js-sample.herokuapp.com/node.png",
+    "keywords": ["node", "express", "iconfinder", "jwt"]
+}
